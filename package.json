@@ -1,0 +1,11 @@
+{
+  "name": "tap-room-react",
+  "version": "1.0.0",
+  "description": "Notes: setting up an environment is hard! ran into several errors trying to copy paste and remove certain components. this did not work. I'm starting the environment from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
