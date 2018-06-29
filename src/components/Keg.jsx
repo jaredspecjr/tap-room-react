@@ -3,10 +3,17 @@ import PropTypes from "prop-types";
 
 function Keg(props){
   return (
-    <div>
-      <h3>{props.name} - {props.type}</h3>
-      <p>{props.price} - {props.pints}</p>
+    <div className="borderStyle">
+      <h3>{props.name} --- {props.type}</h3>
+      <p>{props.price}: {props.pints}</p>
       <p>{props.abv}</p>
+        <style jsx>{`
+          .borderStyle {
+            background-color: white;
+            border-style: double;
+            padding: 10px;
+          }
+      `}</style>
     </div>
   );
 }
