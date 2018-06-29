@@ -5,10 +5,15 @@ import BrewLogo from "./BrewLogo";
 
 function App(){
   return (
-    <div>
+    <div className="margin">
       <Head/>
       <BrewLogo/>
       <KegList/>
+      <style jsx>{`
+        .margin{
+          margin: -8px;
+        }
+    `}</style>
     </div>
   );
 }
