@@ -8,7 +8,7 @@ import { Switch, Route } from "react-router-dom";
 
 function App(){
   return (
-    <div className="thing">
+    <div className="mainContent">
       <Head/>
       <Switch>
         <Route exact path="/" component={KegList} />
@@ -16,7 +16,7 @@ function App(){
         <Route component={Error404} />
       </Switch>
       <style jsx> {`
-        .thing {
+        .mainContent {
           display: flex;
           flex-direction: column;
           align-items: center;
