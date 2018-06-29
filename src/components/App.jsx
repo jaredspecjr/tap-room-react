@@ -1,9 +1,12 @@
 import React from "react";
+import Head from "./Head";
+import KegList from "./KegList";
 
 function App(){
   return (
     <div>
-      <p>test</p>
+      <Head/>
+      <KegList/>
     </div>
   );
 }
