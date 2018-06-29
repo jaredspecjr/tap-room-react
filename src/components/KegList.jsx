@@ -1,5 +1,6 @@
 import React from "react";
 import Keg from "./Keg";
+import BrewLogo from "./BrewLogo";
 
 var masterKegList = [
   {
@@ -29,6 +30,7 @@ function KegList(){
 
   return (
     <div>
+      <BrewLogo/>
       {masterKegList.map((keg, index) =>
         <Keg name={keg.name}
           type={keg.type}

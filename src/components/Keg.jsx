@@ -27,13 +27,13 @@ function Keg(props){
             border: thick ridge navy;
             padding-left: 10px;
           }
-          .listStyle:nth-child(1){
+          .listStyle:nth-child(2){
             background-color: #28a745;
           }
-          .listStyle:nth-child(2){
+          .listStyle:nth-child(3){
             background-color: #ffc107;
           }
-          .listStyle:nth-child(3){
+          .listStyle:nth-child(4){
             background-color: #17a2b8;
           }
           .buttonStyle{
