@@ -6,13 +6,12 @@ function Head(){
     <div className="head">
       <h1>Welcome to Brewfest!</h1>
       <Link to="/">Home</Link> | <Link to="/NewKegForm">Add a Keg</Link>
-        <style jsx>{`
-          .head{
+        <style jsx> {`
+          .head {
             text-align: center;
             font-size: 20px;
-            margin: -20px;
+            margin-top: -20px;
           }
-
       `}</style>
     </div>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function NewKegForm() {
   return (
     <div>
@@ -27,30 +26,29 @@ function NewKegForm() {
           id="abv"
           placeholder="ABV"/>
         <button className="buttonStyle" type="submit">Submit Form</button>
-        <style jsx>{`
-          .formStyle{
+        <style jsx> {`
+          .formStyle {
             display: flex;
             flex-direction: column;
             width: 300px;
             background-color: #724b2c;
           }
-          .inputStyle{
+          .inputStyle {
             font-size: 30px;
             border: 5px solid gold;
             border-radius: 50px;
             margin: 10px;
             padding: 10px;
             background-color: #b79d87;
-
           }
-          .header{
+          .header {
             text-align: center;
             color: gold;
           }
-          ::placeholder{
+          ::placeholder {
             color: black;
           }
-          .buttonStyle{
+          .buttonStyle {
             font-size: 30px;
             border: 5px solid gold;
             border-radius: 50px;

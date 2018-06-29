@@ -4,7 +4,7 @@ function BrewLogo() {
   return (
    <div>
       <h1 className="logoStyle">Brewery Bro's</h1>
-      <style jsx>{`
+      <style jsx> {`
         .logoStyle {
           background-color: brown;
           width: 280px;

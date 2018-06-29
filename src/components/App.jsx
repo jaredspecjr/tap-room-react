@@ -6,19 +6,21 @@ import Error404 from "./Error404";
 import NewKegForm from "./NewKegForm";
 import { Switch, Route } from "react-router-dom";
 
-
 function App(){
   return (
-    <div className="margin">
+    <div className="thing">
       <Head/>
       <Switch>
         <Route exact path="/" component={KegList} />
         <Route path="/NewKegForm" component={NewKegForm} />
         <Route component={Error404} />
       </Switch>
-      <style jsx>{`
-        .margin{
-          margin: -7px;
+      <style jsx> {`
+        .thing {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
         }
     `}</style>
     </div>
