@@ -3,16 +3,17 @@ import React from "react";
 function BrewLogo() {
   return (
    <div>
-      <h2 className="logoStyle">Brewery Bro's!</h2>
+      <h1 className="logoStyle">Brewery Bro's</h1>
       <style jsx>{`
         .logoStyle {
           background-color: brown;
-          max-width: 250px;
-          min-width: 250px;
+          width: 280px;
           border-radius: 50%;
           border-style: double;
           text-align: center;
-          padding: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-bottom: 8px;
         }
     `}</style>
   </div>
