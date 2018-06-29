@@ -10,7 +10,7 @@ function KegList(){
       price="$2.50"
       pints="124"
       abv="2.5%"
-      />
+    />
   );
 }
 
