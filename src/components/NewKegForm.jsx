@@ -26,13 +26,13 @@ function NewKegForm() {
           type="text"
           id="abv"
           placeholder="ABV"/>
-        <button type="submit">Submit Form</button>
+        <button className="buttonStyle" type="submit">Submit Form</button>
         <style jsx>{`
           .formStyle{
             display: flex;
             flex-direction: column;
             width: 300px;
-            background-color: #593111;
+            background-color: #724b2c;
           }
           .inputStyle{
             font-size: 30px;
@@ -40,12 +40,23 @@ function NewKegForm() {
             border-radius: 50px;
             margin: 10px;
             padding: 10px;
-            background-color: tan;
+            background-color: #b79d87;
 
           }
           .header{
             text-align: center;
             color: gold;
+          }
+          ::placeholder{
+            color: black;
+          }
+          .buttonStyle{
+            font-size: 30px;
+            border: 5px solid gold;
+            border-radius: 50px;
+            margin: 10px;
+            padding: 10px;
+            background-color: silver;
           }
       `}</style>
       </form>
