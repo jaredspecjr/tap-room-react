@@ -1,31 +1,53 @@
-import React from "./react";
+import React from "react";
 
 
 function NewKegForm() {
   return (
     <div>
-      <h1>Add a New Keg!</h1>
-      <form>
-        <input
+      <form className="formStyle">
+        <h1 className="header" >Add a New Keg!</h1>
+        <input className="inputStyle"
           type="text"
           id="name"
           placeholder="Brand"/>
-        <input
+        <input className="inputStyle"
           type="text"
           id="type"
           placeholder="type"/>
-        <input
+        <input className="inputStyle"
           type="text"
           id="price"
           placeholder="price"/>
-        <input
+        <input className="inputStyle"
           type="text"
           id="pints"
           placeholder="pints"/>
-        <input
+        <input className="inputStyle"
           type="text"
           id="abv"
           placeholder="ABV"/>
+        <button type="submit">Submit Form</button>
+        <style jsx>{`
+          .formStyle{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background-color: #593111;
+          }
+          .inputStyle{
+            font-size: 30px;
+            border: 5px solid gold;
+            border-radius: 50px;
+            margin: 10px;
+            padding: 10px;
+            background-color: tan;
+
+          }
+          .header{
+            text-align: center;
+            color: gold;
+          }
+      `}</style>
       </form>
     </div>
   );
