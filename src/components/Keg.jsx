@@ -37,11 +37,13 @@ function Keg(props){
             background-color: #17a2b8;
           }
           .buttonStyle{
-            font-size: 25px;
+            font-size: 20px;
+            width: 130px;
+            height: 40px;
           }
           .padding{
             padding-top: 5px;
-            padding-bottom: 2.5px;
+            padding-bottom: 5px;
           }
       `}</style>
     </div>

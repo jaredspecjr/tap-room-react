@@ -11,7 +11,7 @@ function App(){
       <KegList/>
       <style jsx>{`
         .margin{
-          margin: -8px;
+          margin: -7px;
         }
     `}</style>
     </div>
