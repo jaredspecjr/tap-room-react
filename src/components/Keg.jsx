@@ -4,12 +4,16 @@ import PropTypes from "prop-types";
 function Keg(props){
   return (
     <div className="listStyle">
-      <div>
+      <div className="infoStyle">
         {props.name} --- {props.type}<br></br>{props.price} Pints: {props.pints}<br></br> ABV: {props.abv}
       </div>
-      <button className="button">Sell a Pint!</button>
+      <div className="button">
+        <button className="buttonStyle">Sell a Pint!</button>
+      </div>
         <style jsx>{`
           .listStyle {
+            display: flex;
+            flex-direction: row;
             width: 270px;
             font-size: 25px;
             font-family: comic;
@@ -28,7 +32,17 @@ function Keg(props){
           .listStyle:nth-child(3){
             background-color: #17a2b8;
           }
-      
+          .button{
+          align-self: flex-end;
+          height: 30px;
+          }
+          .buttonStyle{
+            width: 100px;
+          }
+          .infoStyle{
+            width:800px;
+          }
+
       `}</style>
     </div>
   );
