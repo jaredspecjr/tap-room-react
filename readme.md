@@ -36,3 +36,6 @@ at the moment there is no functionality in the sell buttons and form.
 * From the project root directory in the command line, enter "atom .",
 * run npm install in the terminal
 * run npm run start to view the site at localhost8080
+
+
+![picture of my sketch](./sketch.jpg)

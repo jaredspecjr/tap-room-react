@@ -11,6 +11,7 @@ function Head(){
             text-align: center;
             font-size: 20px;
             margin-top: -20px;
+            font-family: sans-serif;
           }
       `}</style>
     </div>
