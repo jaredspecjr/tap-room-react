@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import SellButton from "./SellButton";
 
 function Keg(props){
   return (
@@ -13,7 +14,7 @@ function Keg(props){
         </div>
         <div>
           ABV: {props.abv}
-          <button onClick={props.onHandlePints} className="buttonStyle">Sell a Pint!</button>
+          <button className="buttonStyle"><SellButton onHandlePints={props.onHandlePints} kegId={props.kegId}/></button>
         </div>
       </div>
         <style jsx>{`
@@ -39,7 +40,7 @@ function Keg(props){
           .buttonStyle{
             font-size: 20px;
             width: 130px;
-            height: 40px;
+            height: 60px;
           }
           .padding{
             padding-top: 5px;
@@ -56,8 +57,7 @@ Keg.propTypes = {
   type: PropTypes.string,
   price: PropTypes.string,
   pints: PropTypes.number,
-  abv: PropTypes.string,
-  onHandlePints: PropTypes.func
+  abv: PropTypes.string
 };
 
 export default Keg;

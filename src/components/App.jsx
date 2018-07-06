@@ -5,31 +5,35 @@ import BrewLogo from "./BrewLogo";
 import Error404 from "./Error404";
 import NewKegForm from "./NewKegForm";
 import { Switch, Route } from "react-router-dom";
+import { v4 } from "uuid";
 
 class App extends React.Component{
   constructor(props){
     super(props);
-    this.state ={
+    this.state = {
       masterKegList : [
        {
          name: "Guinness",
          type: "Stout",
          price: "$5.00",
-         pints: "124",
+         pints: 124,
+         id: v4(),
          abv: "3.8%"
        },
        {
          name: "Newcastle",
          type: "Ale",
          price: "$4.00",
-         pints: "124",
+         pints: 124,
+         id: v4(),
          abv: "4.0%"
        },
        {
          name: "Yuengling",
          type: "Lager",
          price: "$2.50",
-         pints: "124",
+         pints: 124,
+         id: v4(),
          abv: "2.5%"
        }
      ],
@@ -38,8 +42,15 @@ class App extends React.Component{
     this.subtractPint = this.subtractPint.bind(this);
     console.log(this.state);
   }
-  subtractPint(){
-    this.setState({pints: this.state.pints -1});
+  subtractPint(id){
+    let newMasterKegList = this.state.masterKegList.slice();
+    for(let i = 0; i < newMasterKegList.length; i++) {
+      if ( newMasterKegList[i].id === id){
+        newMasterKegList[i].pints -= 1;
+        console.log(id);
+        this.setState({masterKegList: newMasterKegList});
+      }
+    }
   }
   render(){
     return (
@@ -50,7 +61,6 @@ class App extends React.Component{
           <Route path="/NewKegForm" component={NewKegForm} />
           <Route component={Error404} />
         </Switch>
-        <button onClick={this.subtractPint}>test</button>
         <style jsx> {`
             .mainContent {
               display: flex;

@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 
 
 function KegList(props){
-
   return (
     <div>
       <BrewLogo/>
@@ -14,10 +13,11 @@ function KegList(props){
         <Keg name={keg.name}
           type={keg.type}
           price={keg.price}
-          pints={props.pints}
+          pints={keg.pints}
           abv={keg.abv}
           onHandlePints={props.onHandlePints}
-          key={index}/>
+          key={index}
+          kegId={keg.id}/>
 
       )}
     </div>
