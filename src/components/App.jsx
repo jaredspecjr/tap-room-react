@@ -10,8 +10,30 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state ={
-      pints: 124
-    }
+      masterKegList : [
+       {
+         name: "Guinness",
+         type: "Stout",
+         price: "$5.00",
+         pints: "124",
+         abv: "3.8%"
+       },
+       {
+         name: "Newcastle",
+         type: "Ale",
+         price: "$4.00",
+         pints: "124",
+         abv: "4.0%"
+       },
+       {
+         name: "Yuengling",
+         type: "Lager",
+         price: "$2.50",
+         pints: "124",
+         abv: "2.5%"
+       }
+     ],
+   };
 
     this.subtractPint = this.subtractPint.bind(this);
     console.log(this.state);
@@ -24,7 +46,7 @@ class App extends React.Component{
       <div className="mainContent">
         <Head/>
         <Switch>
-          <Route exact path="/" render={()=><KegList pints={this.state.pints} onHandlePints={this.subtractPint} />} />
+          <Route exact path="/" render={()=><KegList masterKegList={this.state} onHandlePints={this.subtractPint} />} />
           <Route path="/NewKegForm" component={NewKegForm} />
           <Route component={Error404} />
         </Switch>
