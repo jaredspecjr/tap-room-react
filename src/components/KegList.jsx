@@ -8,21 +8,18 @@ var masterKegList = [
     name: "Guinness",
     type: "Stout",
     price: "$5.00",
-    pints: "124",
     abv: "3.8%"
   },
   {
     name: "Newcastle",
     type: "Ale",
     price: "$4.00",
-    pints: "124",
     abv: "4.0%"
   },
   {
     name: "Yuengling",
     type: "Lager",
     price: "$2.50",
-    pints: "124",
     abv: "2.5%"
   }
 ];
@@ -39,9 +36,15 @@ function KegList(props){
           pints={props.pints}
           abv={keg.abv}
           key={index}/>
+
       )}
     </div>
   );
 }
+
+KegList.propTypes = {
+  pints: PropTypes.number,
+  onHandlePints: PropTypes.func
+};
 
 export default KegList;

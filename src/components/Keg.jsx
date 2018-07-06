@@ -13,7 +13,7 @@ function Keg(props){
         </div>
         <div>
           ABV: {props.abv}
-          <button className="buttonStyle">Sell a Pint!</button>
+          <button onClick={props.onHandlePints} className="buttonStyle">Sell a Pint!</button>
         </div>
       </div>
         <style jsx>{`
@@ -50,12 +50,14 @@ function Keg(props){
   );
 }
 
+
 Keg.propTypes = {
   name: PropTypes.string,
   type: PropTypes.string,
   price: PropTypes.string,
-  pints: PropTypes.string,
-  abv: PropTypes.string
+  pints: PropTypes.number,
+  abv: PropTypes.string,
+  onHandlePints: PropTypes.func
 };
 
 export default Keg;

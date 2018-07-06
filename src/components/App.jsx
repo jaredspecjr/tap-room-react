@@ -12,7 +12,7 @@ class App extends React.Component{
     this.state ={
       pints: 124
     }
-    let currentPints = this.state.pints;
+
     this.subtractPint = this.subtractPint.bind(this);
     console.log(this.state);
   }
@@ -24,10 +24,11 @@ class App extends React.Component{
       <div className="mainContent">
         <Head/>
         <Switch>
-          <Route exact path="/" render={()=><KegList pints={this.state.pints} />} />
+          <Route exact path="/" render={()=><KegList pints={this.state.pints} onHandlePints={this.subtractPint} />} />
           <Route path="/NewKegForm" component={NewKegForm} />
           <Route component={Error404} />
         </Switch>
+        <button onClick={this.subtractPint}>test</button>
         <style jsx> {`
             .mainContent {
               display: flex;
