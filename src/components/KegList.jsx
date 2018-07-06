@@ -1,6 +1,7 @@
 import React from "react";
 import Keg from "./Keg";
 import BrewLogo from "./BrewLogo";
+import PropTypes from "prop-types";
 
 var masterKegList = [
   {
@@ -26,7 +27,7 @@ var masterKegList = [
   }
 ];
 
-function KegList(){
+function KegList(props){
 
   return (
     <div>
@@ -35,7 +36,7 @@ function KegList(){
         <Keg name={keg.name}
           type={keg.type}
           price={keg.price}
-          pints={keg.pints}
+          pints={props.pints}
           abv={keg.abv}
           key={index}/>
       )}
