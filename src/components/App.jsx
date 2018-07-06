@@ -41,6 +41,7 @@ class App extends React.Component{
 
     this.subtractPint = this.subtractPint.bind(this);
     console.log(this.state);
+    this.handleAddingNewKeg = this.handleAddingNewKeg.bind(this);
   }
   subtractPint(id){
     let newMasterKegList = this.state.masterKegList.slice();
@@ -51,13 +52,18 @@ class App extends React.Component{
       }
     }
   }
+  handleAddingNewKeg(newKeg){
+    var newMasterKegList = this.state.masterKegList.slice();
+    newMasterKegList.push(newKeg);
+    this.setState({masterKegList: newMasterKegList});
+  }
   render(){
     return (
       <div className="mainContent">
         <Head/>
         <Switch>
           <Route exact path="/" render={()=><KegList masterKegList={this.state} onHandlePints={this.subtractPint} />} />
-          <Route path="/NewKegForm" component={NewKegForm} />
+          <Route path="/NewKegForm" render={()=> <NewKegForm onNewKegCreation={this.handleAddingNewKeg} />} />
           <Route component={Error404} />
         </Switch>
         <style jsx> {`
