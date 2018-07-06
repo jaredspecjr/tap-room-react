@@ -47,7 +47,6 @@ class App extends React.Component{
     for(let i = 0; i < newMasterKegList.length; i++) {
       if ( newMasterKegList[i].id === id){
         newMasterKegList[i].pints -= 1;
-        console.log(id);
         this.setState({masterKegList: newMasterKegList});
       }
     }

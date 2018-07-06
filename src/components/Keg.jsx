@@ -14,7 +14,7 @@ function Keg(props){
         </div>
         <div>
           ABV: {props.abv}
-          <button className="buttonStyle"><SellButton onHandlePints={props.onHandlePints} kegId={props.kegId}/></button>
+          <span className="buttonPosition"><SellButton onHandlePints={props.onHandlePints} kegId={props.kegId}/></span>
         </div>
       </div>
         <style jsx>{`
@@ -37,11 +37,6 @@ function Keg(props){
           .listStyle:nth-child(4){
             background-color: #17a2b8;
           }
-          .buttonStyle{
-            font-size: 20px;
-            width: 130px;
-            height: 60px;
-          }
           .padding{
             padding-top: 5px;
             padding-bottom: 5px;
@@ -57,7 +52,7 @@ Keg.propTypes = {
   type: PropTypes.string,
   price: PropTypes.string,
   pints: PropTypes.number,
-  abv: PropTypes.string
+  abv: PropTypes.string,
 };
 
 export default Keg;
