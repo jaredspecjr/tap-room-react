@@ -12,6 +12,8 @@ State may need to reside in App as both the kegList and newKegForm may need it.
 
 not entirely sure how to make this project dynamic yet, I keep hitting road blocks like "how do I subtract from a specific pint without subtracting from them all? should I hard code 3 separate pint repo's? or is there a way to target them and subtract from just those."
 
+still not sure how to change the background color conditionally.
+
 
 
 OLD!!

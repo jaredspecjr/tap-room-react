@@ -53,8 +53,7 @@ class App extends React.Component{
     }
   }
   handleAddingNewKeg(newKeg){
-    newKeg.id = v4()
-    console.log(newKeg.id)
+    newKeg.id = v4();
     var newMasterKegList = this.state.masterKegList.slice();
     newMasterKegList.push(newKeg);
     this.setState({masterKegList: newMasterKegList});
