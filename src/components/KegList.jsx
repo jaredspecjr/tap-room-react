@@ -35,6 +35,7 @@ function KegList(props){
           price={keg.price}
           pints={props.pints}
           abv={keg.abv}
+          onHandlePints={props.onHandlePints}
           key={index}/>
 
       )}
