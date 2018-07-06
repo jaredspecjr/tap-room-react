@@ -7,6 +7,14 @@ this is a clone project of a previous two-day project! It has reacts functionali
 
 Notes:
 
+NEW!!!!!
+State may need to reside in App as both the kegList and newKegForm may need it.
+
+not entirely sure how to make this project dynamic yet, I keep hitting road blocks like "how do I subtract from a specific pint without subtracting from them all? should I hard code 3 separate pint repo's? or is there a way to target them and subtract from just those."
+
+
+
+OLD!!
 setting up an environment is hard! ran into several errors trying to copy paste and remove certain components. this did not work. I'm starting the environment from scratch.
 
 I'm noticing that the same css I used for angular will not render the same in react.
